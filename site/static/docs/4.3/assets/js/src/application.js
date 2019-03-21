@@ -54,11 +54,11 @@
   btnToggleDarkMode
     .addEventListener('click', debounce(function () {
       if (document.documentElement.classList.contains('bs-docs-dark-mode')) {
-        localStorage.setItem('bs-docs-dark-mode', 0)
+        localStorage.setItem('bs-docs-dark-mode', '0')
         document.documentElement.classList.remove('bs-docs-dark-mode')
         btnToggleDarkMode.classList.remove('active')
       } else {
-        localStorage.setItem('bs-docs-dark-mode', 1)
+        localStorage.setItem('bs-docs-dark-mode', '1')
         document.documentElement.classList.add('bs-docs-dark-mode')
         btnToggleDarkMode.classList.add('active')
       }
